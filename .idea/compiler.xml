@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="friendspammer-helper" />
+        <module name="tdd-opdracht" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="friendspammer-helper" target="7" />
+      <module name="tdd-opdracht" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>

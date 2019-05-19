@@ -1,14 +1,9 @@
 package nl.hu.sie.bep.friendspammer;
 
-import java.util.Properties;
-
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
+import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.Properties;
 
 public class EmailSender {
 	
@@ -19,8 +14,8 @@ public class EmailSender {
 		props.put("mail.smtp.port", "2525");
 		props.put("mail.smtp.auth", "true");
 
-		String username = "7a1eaba28156ea";
-		String password = "45e7c5f4925a9d";
+		final String username = "7a1eaba28156ea";
+		final String password = "45e7c5f4925a9d";
 
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {
@@ -57,8 +52,8 @@ public class EmailSender {
 		props.put("mail.smtp.port", "2525");
 		props.put("mail.smtp.auth", "true");
 		
-		String username = "YOUR MAIL USERNAME";
-		String password = "YOUR MAIL PASSWORD";
+		final String username = "YOUR MAIL USERNAME";
+		final String password = "YOUR MAIL PASSWORD";
 
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {

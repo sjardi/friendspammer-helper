@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/friendspammer-helper.iml" filepath="$PROJECT_DIR$/friendspammer-helper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tdd-opdracht.iml" filepath="$PROJECT_DIR$/tdd-opdracht.iml" />
     </modules>
   </component>
 </project>
