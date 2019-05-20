@@ -1,21 +1,12 @@
 package nl.hu.sie.bep.friendspammer;
 
-import java.net.UnknownHostException;
-import java.util.Arrays;
-
-import org.bson.Document;
-
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
-import com.mongodb.MongoClientOptions;
 import com.mongodb.MongoClientURI;
 import com.mongodb.MongoCredential;
 import com.mongodb.MongoException;
-import com.mongodb.ServerAddress;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
 
 public class MongoSaver {
 	
@@ -28,7 +19,7 @@ public class MongoSaver {
 		
 		boolean success = true;
 		
-		try (MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb+srv://SDW:SDW@bep-ppqy9.azure.mongodb.net/test")) ) {
+		try (MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb+srv://SDW:SDW@bep-ppqy9.azure.mongodb.net/test?retryWrites=true")) ) {
 			
 			MongoDatabase db = mongoClient.getDatabase( database );
 			
