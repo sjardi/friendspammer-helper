@@ -8,7 +8,7 @@ import java.util.Properties;
 public class EmailSender {
 	
 	public static void sendEmail(String subject, String to, String messageBody, boolean asHtml) {
-
+		// comment
 		Properties props = new Properties();
 		props.put("mail.smtp.host", "smtp.mailtrap.io");
 		props.put("mail.smtp.port", "2525");
