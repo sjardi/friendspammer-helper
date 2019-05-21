@@ -3,6 +3,10 @@ package nl.hu.sie.bep.friendspammer;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class EmailSender {
@@ -14,8 +18,19 @@ public class EmailSender {
 		props.put("mail.smtp.port", "2525");
 		props.put("mail.smtp.auth", "true");
 
-		final String username = "7a1eaba28156ea";
-		final String password = "45e7c5f4925a9d";
+		InputStream input = null;
+		try {
+			input = new FileInputStream("src/config/config.properties");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			props.load(input);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		final String username = props.getProperty("username");
+		final String password = props.getProperty("password");
 
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {
