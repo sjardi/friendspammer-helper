@@ -6,7 +6,7 @@
 
 	<groupId>nl.hu.bep.opdracht-3</groupId>
 	<artifactId>friendspammer-helper</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 
 	<build>
 		<plugins>
@@ -67,4 +67,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 </project>
