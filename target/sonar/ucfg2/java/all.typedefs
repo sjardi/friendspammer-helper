@@ -775,7 +775,8 @@ entrySet()+org.bson.Document#entrySet()Ljava/util/Set;®
 CtoJson(Lorg/bson/json/JsonWriterSettings;Lorg/bson/codecs/Encoder;)gorg.bson.Document#toJson(Lorg/bson/json/JsonWriterSettings;Lorg/bson/codecs/Encoder;)Ljava/lang/String;\
 getLong(Ljava/lang/Object;)=org.bson.Document#getLong(Ljava/lang/Object;)Ljava/lang/Long;#
 size()org.bson.Document#size()I6
-"com.mongodb.client.MongoCollectionjava.lang.Object¥	
+"com.mongodb.client.MongoCollectionjava.lang.Object$
+org.slf4j.Loggerjava.lang.Object¥	
 com.mongodb.MongoExceptionjava.lang.RuntimeException‘
 +fromThrowableNonNull(Ljava/lang/Throwable;)bcom.mongodb.MongoException#fromThrowableNonNull(Ljava/lang/Throwable;)Lcom/mongodb/MongoException;ƒ
 $fromThrowable(Ljava/lang/Throwable;)[com.mongodb.MongoException#fromThrowable(Ljava/lang/Throwable;)Lcom/mongodb/MongoException;b

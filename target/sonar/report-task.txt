@@ -3,5 +3,5 @@ projectKey=sjardi_friendspammer-helper
 serverUrl=https://sonarcloud.io
 serverVersion=7.8.0.25269
 dashboardUrl=https://sonarcloud.io/dashboard?id=sjardi_friendspammer-helper
-ceTaskId=AWrcK4L_1j-PIqXcr-d7
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWrcK4L_1j-PIqXcr-d7
+ceTaskId=AWrcXW2HrzkERloApNsn
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWrcXW2HrzkERloApNsn

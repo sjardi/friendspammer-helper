@@ -37,7 +37,7 @@ public class MongoSaver {
 			Logger logger = LoggerFactory.getLogger(MongoSaver.class);
 			logger.info("XXXXXXXXXXXXXXXXXX ERROR WHILE SAVING TO MONGO XXXXXXXXXXXXXXXXXXXXXXXXXX");
 
-			mongoException.printStackTrace();
+			logger.info( mongoException.getMessage());
 			success = false;
 		}
 		

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ca03fb-0897-405f-b710-daeb1d7a64c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl.hu.sie.bep.friendspammer/MongoSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl.hu.sie.bep.friendspammer/MongoSaver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tdd-opdracht.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tdd-opdracht.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wercker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/wercker.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -49,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl.hu.sie.bep.friendspammer/MongoSaver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="680">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,10 +55,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/3.10.2/mongo-java-driver-3.10.2.jar!/com/mongodb/MongoException.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wercker.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="459">
+              <caret line="27" column="245" selection-start-line="27" selection-start-column="205" selection-end-line="27" selection-end-column="245" />
             </state>
           </provider>
         </entry>
@@ -76,6 +81,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>login</find>
+      <find>print</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -86,8 +97,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/nl.hu.sie.bep.friendspammer/EmailSender.java" />
         <option value="$PROJECT_DIR$/src/test/java/Testing.java" />
-        <option value="$PROJECT_DIR$/wercker.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/wercker.yml" />
         <option value="$PROJECT_DIR$/src/main/java/nl.hu.sie.bep.friendspammer/MongoSaver.java" />
       </list>
     </option>
@@ -343,7 +354,7 @@
       <workItem from="1558359114431" duration="4761000" />
       <workItem from="1558464433900" duration="30000" />
       <workItem from="1558464483076" duration="6152000" />
-      <workItem from="1558474045147" duration="485000" />
+      <workItem from="1558474045147" duration="1715000" />
     </task>
     <servers />
   </component>
@@ -353,7 +364,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14161000" />
+    <option name="totallyTimeSpent" value="15391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -424,20 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wercker.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl.hu.sie.bep.friendspammer/EmailSender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -448,10 +445,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wercker.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="245" selection-start-line="27" selection-start-column="205" selection-end-line="27" selection-end-column="245" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/3.10.2/mongo-java-driver-3.10.2.jar!/com/mongodb/MongoException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl.hu.sie.bep.friendspammer/MongoSaver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="680">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
