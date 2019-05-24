@@ -25,7 +25,7 @@ sonar:
   steps:
     # https://github.com/wercker/step-maven
     - wercker/maven:
-      goals: clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -Dmaven.test.failure.ignore=true -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=<ORGANISATIE> -Dsonar.login=fc13bda5a7b672e79fc85d952ca77453ba5940af
+      goals: clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -Dmaven.test.failure.ignore=true -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=<ORGANISATIE> -Dsonar.login=b0de6a2aae00b3dcb361e62bc73e7fc08d821e63
       cache_repo: true
       version: 3.5.2
 
