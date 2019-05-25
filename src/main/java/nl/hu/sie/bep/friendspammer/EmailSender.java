@@ -1,5 +1,8 @@
 package nl.hu.sie.bep.friendspammer;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -10,7 +13,12 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class EmailSender {
-	
+
+
+	private EmailSender() {
+		throw new IllegalStateException("Utility class");
+	}
+
 	public static void sendEmail(String subject, String to, String messageBody, boolean asHtml) {
 		Properties props = new Properties();
 		props.put("mail.smtp.host", "smtp.mailtrap.io");
@@ -21,12 +29,14 @@ public class EmailSender {
 		try {
 			input = new FileInputStream("src/config/config.properties");
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			Logger logger = LoggerFactory.getLogger(MongoSaver.class);
+			logger.info("Error", e);
 		}
 		try {
 			props.load(input);
 		} catch (IOException e) {
-			e.printStackTrace();
+			Logger logger = LoggerFactory.getLogger(MongoSaver.class);
+			logger.info("Error", e);
 		}
 		final String username = props.getProperty("username");
 		final String password = props.getProperty("password");
@@ -67,12 +77,12 @@ public class EmailSender {
 		props.put("mail.smtp.auth", "true");
 		
 		final String username = "YOUR MAIL USERNAME";
-		final String password = "YOUR MAIL PASSWORD";
+		final String psw = "YOUR MAIL PASSWORD";
 
 		Session session = Session.getInstance(props,
 				  new javax.mail.Authenticator() {
 					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication(username, password);
+						return new PasswordAuthentication(username, psw);
 					}
 				  });
 		try {
@@ -91,8 +101,9 @@ public class EmailSender {
 					message.setText(messageBody);	
 				}
 				Transport.send(message);
-	
-				System.out.println("Done");
+
+				Logger logger = LoggerFactory.getLogger(MongoSaver.class);
+				logger.info("EmailSender: Done");
 			}
 
 		} catch (MessagingException e) {
