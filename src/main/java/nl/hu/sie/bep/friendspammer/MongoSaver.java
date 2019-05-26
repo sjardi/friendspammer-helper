@@ -5,11 +5,14 @@ import com.mongodb.MongoClientURI;
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import nl.hu.sie.bep.friendspammer.DTO.Message;
 import org.bson.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class MongoSaver {
 
@@ -43,7 +46,9 @@ public class MongoSaver {
 
 	}
 
-	public Document getMessages() {
+	public List<Message> getMessages() {
+	    List<Message> messages = new ArrayList<>();
+	    Message actualMessage = new Message();
 		String database = "BEP";
 		Document email = null;
 		MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb+srv://SDW:SDW@bep-ppqy9.azure.mongodb.net/test"));
@@ -56,10 +61,12 @@ public class MongoSaver {
 
 		while (it.hasNext()) {
 			 email = it.next();
+			 System.out.println("in get message" + it.next());
 
 		}
-
+		actualMessage.to = "hoi";
+        messages.add(actualMessage);
 		mongoClient.close();
-		return email;
+		return messages;
 	}
 }
